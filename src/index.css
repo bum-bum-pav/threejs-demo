@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.line {
+  width: 300px; /* Width of the line minus circle size */
+  height: 2px; /* Thickness of the line */
+  background-color: black;
+  transform: translateY(-50%);
+}
+
+.line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30px; /* Diameter of the circle */
+  height: 30px; /* Diameter of the circle */
+  border-radius: 50%;
+  border: 1px solid black;
+  transform: translateY(-50%);
+}
+
+.line::after {
+  right: -15px;
+}

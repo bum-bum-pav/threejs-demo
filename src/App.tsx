@@ -3,6 +3,8 @@ import About from "./components/About";
 import BuyNow from "./components/BuyNow";
 import CanvasContainer from "./components/CanvasContainer";
 import Hero from "./components/Hero";
+import Bel from "./components/Bel";
+import Kol from "./components/Kol";
 
 function App() {
   const [region, setRegion] = React.useState<string>("");
@@ -14,6 +16,8 @@ function App() {
       <Hero />
       <About setRegion={setRegion} region={region} />
       <BuyNow setRegion={setRegion} />
+      <Bel />
+      <Kol />
     </div>
   );
 }
